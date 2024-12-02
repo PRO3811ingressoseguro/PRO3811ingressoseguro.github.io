@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ingresso Seguro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo 
+						<div id="logo">
+							<h1><a href="index.html">Ingresso Seguro</a></h1>
+							<p>ingressoseguro.com.br</p>
+						</div> -->
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="#home">Ingresso Seguro</a></li>
+								<li><a href="#quem-somos">Quem somos</a></li>
+								<li><a href="#institucional">Institucional</a></li>
+								<li><a href="#compreja">Compre já</a></li>
+								<li><a href="#contato">Contato</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Intro -->
+				<section id="quem-somos" class="wrapper style1">
+					<div class="title">Quem Somos?</div>
+					<div class="container">
+						<p class="style1">Caso não nos conheça...</p>
+						<!--<p class="style2">
+							Escape Velocity is a free responsive<br class="mobile-hide" />
+							site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+						</p> -->
+						<p class="style2">
+							Ingresso Seguro foi estabelecido para  <br class="mobile-hide" />
+							comercializar ingressos com segurança</a>
+						</p>
+						<p class="style3">Possibilitamos <strong> compra e revenda</strong> de ingressos de forma segura e <strong>sem dor de cabeça!</strong>
+							<br> Seu <strong>Ingresso</strong> completamente <strong>Seguro!</strong></p>
+						<ul class="actions">
+							<li><a href="#" class="button style3 large">Saiba mais</a></li>
+						</ul>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="institucional" class="wrapper style2">
+					<div class="title">Institucional</div>
+					<div class="container">
+
+						<!-- Image 
+							<a href="#" class="image featured">
+								 <img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /> 
+								<img src="{{ url_for('static', filename='images/banner.png') }}" alt="" />
+							</a> -->
+							<!-- Image Carousel -->
+							<div id="imageCarousel" class="carousel">
+								<img id="carouselImage" src="static/images/futebol.jpg" alt="Image 1" class="featured" />
+					
+								<!-- Left and Right Arrows -->
+								<a class="prev" onclick="changeImageByArrow(-1)">&#10094;</a>
+								<a class="next" onclick="changeImageByArrow(1)">&#10095;</a>
+
+							</div>
+
+						<!-- Features -->
+							<section id="features">
+								<header class="style1">
+									<h2>Troca eficiente</h2>
+									<p>Garantia de segurança na troca do seu ingresso!</p>
+								</header>
+								<div class="feature-list">
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<section>
+												<h3 class="icon solid fa-bullseye">Missão</h3>
+												<p>Gerenciar e comercializar ingressos, adotando práticas de segurança corretas, descomplicando o câmbio de ingressos.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<h3 class="icon solid fa-compass">Visão</h3>
+												<p>Ser referência no gerenciamento e comercialização no setor de entreterimento no Brasil.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<h3 class="icon solid fa-handshake ">Valores</h3>
+												<p>Responsabilidade Social e Sustentabilidade. Ética e Transparência. Melhoria Contínua e Inovação. Colaboração.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<h3 class="icon solid fa-piggy-bank">Sua economia</h3>
+												<p>Economize ao comprar e revender ingressos com segurança e praticidade, minimizando riscos e maximizando o valor em cada transação.</p>
+											</section>
+										</div>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="#" class="button style12 large">Compre já</a></li>
+									<li><a href="#" class="button style2 large">Saiba Mais</a></li>
+								</ul>
+							</section>
+
+					</div>
+				</section>
+
+					<!-- Add your CSS -->
+					<style>
+						.carousel {
+							position: relative;
+							text-align: center;
+							max-width: 100%;
+							margin: auto;
+						}
+						#carouselImage {
+							width: 100%;
+							max-height: 400px;
+							object-fit: cover;
+						}
+						/* Left and right arrow buttons */
+						.prev, .next {
+							cursor: pointer;
+							position: absolute;
+							top: 50%;
+							width: auto;
+							padding: 16px;
+							margin-top: -22px;
+							color: white;
+							font-weight: bold;
+							font-size: 24px;
+							transition: 0.6s ease;
+							border-radius: 0 3px 3px 0;
+							user-select: none;
+						}
+						.prev {
+							left: 0;
+							border-radius: 3px 0 0 3px;
+						}
+						.next {
+							right: 0;
+							border-radius: 3px 0 0 3px;
+						}
+						/* Hover effects on the arrows */
+						.prev:hover, .next:hover {
+							background-color: rgba(0, 0, 0, 0.8);
+						}
+
+						/* Buttons for switching images directly */
+						.carousel-buttons {
+							margin-top: 10px;
+						}
+						.carousel-btn {
+							padding: 10px 20px;
+							margin: 5px;
+							background-color: #333;
+							color: white;
+							border: none;
+							cursor: pointer;
+						}
+						.carousel-btn:hover {
+							background-color: #555;
+						}
+					</style>
+
+					<!-- JavaScript -->
+					<script>
+						var currentImageIndex = 1;
+						var totalImages = 3;
+
+						// Array of image paths
+						var images = [
+							"static/images/futebol.jpg",
+							"static/images/teatro.png",
+							"static/images/musica.jpg"
+						];
+
+						// Change the image based on the index from direct button click
+						//function changeImage(imageIndex) {
+						//	currentImageIndex = imageIndex;
+						//	document.getElementById('carouselImage').src = images[currentImageIndex - 1];
+						//}
+
+						// Change the image using left/right arrows
+						function changeImageByArrow(direction) {
+							currentImageIndex += direction;
+							if (currentImageIndex > totalImages) {
+								currentImageIndex = 1;
+							}
+							if (currentImageIndex < 1) {
+								currentImageIndex = totalImages;
+							}
+							document.getElementById('carouselImage').src = images[currentImageIndex - 1];
+						}
+					</script>
+
+			<!-- Highlights -->
+				<section id="compreja" class="wrapper style3">
+					<div class="title"><h3>Compre Já</h3></div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-3 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="static/images/esportes.jpg" alt="" /></a>
+									<h3><a href="#">Eventos Esportivos</a></h3>
+									<p>Assista ao seu time do coração ao vivo com ingressos garantidos e verificados. Encontre ingressos para jogos de futebol, basquete, vôlei e muito mais!</p>
+									<ul class="actions">
+										<li><a href="pagina1.html" class="button style1">Saiba Mais</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-3 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="static/images/teatro2.png" alt="" /></a>
+									<h3><a href="#">Peças de Teatro</a></h3>
+									<p>Experimente o melhor do teatro com ingressos autênticos para espetáculos em sua região. Não perca os espetáculos mais comentados! </p>
+									<ul class="actions">
+										<li><a href="pagina1.html" class="button style1">Saiba Mais</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-3 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="static/images/festival.jpeg" alt="" /></a>
+									<h3><a href="#">Festivais</a></h3>
+									<p>Garanta o ingresso para os maiores festivais de música, artes e cultura. Encontre os eventos mais aguardados e faça parte dessa experiência! </p>
+									<ul class="actions">
+										<li><a href="pagina1.html" class="button style1">Saiba Mais</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-3 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="static/images/ticket.jpg" alt="" /></a>
+									<h3><a href="#">Anuncie seu ingresso</a></h3>
+									<p>Tem um ingresso sobrando? Anuncie-o de forma segura e encontre compradores confiáveis rapidamente através de nossa plataforma. </p>
+									<ul class="actions">
+										<li><a href="pagina1.html" class="button style1">Saiba Mais</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="contato" class="wrapper">
+					<div class="title">Contato</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Deseja revender?</h2>
+							<p>
+								Faça parte você também e revende já!  <br/>
+								Seu <strong>Ingresso</strong> completamente <strong>Seguro!</strong> <br/>
+								Que tal anunciar aqui?  
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Nome" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="button" class="style12" value="Enviar" /></li>
+														<li><input type="reset" class="style2" value="Limpar" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h4 class="icon solid fa-home">Endereço</h4>
+													<p>
+														Ingresso Seguro<br/>
+														Av. Prof. Luciano Gualberto<br/> 
+														Cidade Universitária<br/>
+														São Paulo, SP
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h4 class="icon solid fa-comment">Social</h4>
+													<p>
+														<a href="#">@ingressoseguro</a><br />
+														<a href="#">linkedin.com/ingressoseguro</a><br />
+														<a href="#">facebook.com/ingressoseguro</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h4 class="icon solid fa-envelope">Email</h4>
+													<p>
+														<a href="#">contas@ingresso.seguro.br</a>
+														<a href="#">suporte@ingresso.seguro.br</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h4 class="icon solid fa-phone">Telefone</h4>
+													<p>
+														(65) 9 8756 4321
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<!-- <div id="copyright">
+							<ul>
+								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div> -->
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts
+		
+		<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+		-->
+
+		<script src="static/assets/js/jquery.min.js"></script>
+		<script src="static/assets/js/jquery.dropotron.min.js"></script>
+		<script src="static/assets/js/browser.min.js"></script>
+		<script src="static/assets/js/breakpoints.min.js"></script>
+		<script src="static/assets/js/util.js"></script>
+		<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
